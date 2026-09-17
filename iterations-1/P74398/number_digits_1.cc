@@ -2,7 +2,7 @@
 
 int main() {
     int number;
-    cin >> number;
+    std::cin >> number;
 
     for (int i = 2; i <= 16; i++) {
         /*

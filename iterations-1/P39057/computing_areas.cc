@@ -10,17 +10,18 @@ int main() {
     for (int i = 0; i < n; i++) {
         string type;
         cin >> type;
-
+        double output;
         if (type == "rectangle") {
             int length, width;
             cin >> length >> width;
 
-            cout << length * width << endl;
+            output = length * width;
         } else {
             int radius;
             cin >> radius;
 
-            cout << M_PI * pow(radius, 2) << endl;
+            output = M_PI * pow(radius, 2);
         }
+        cout << fixed() << setprecision(6) << output << endl;
     }
 }
