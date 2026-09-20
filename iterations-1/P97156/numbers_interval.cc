@@ -1,12 +1,11 @@
 #include <iostream>
 using namespace std;
 
+
 int main() {
-    int val1, val2;
-
-    cin >> val1 >> val2;
-
-    for (int i = val1; i <= val2; i++) {
-        
-    }
+    int a, b;
+    cin >> a >> b;
+    if (a <= b) cout << a;
+    for (int i = a+1; i <= b; ++i) cout << ',' << i;
+    cout << endl;
 }

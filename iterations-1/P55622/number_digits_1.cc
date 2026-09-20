@@ -8,7 +8,7 @@ int main() {
     do {
         digits++;
         temp /= 10;
-    } while (temp != temp / 10 )
+    } while (temp != temp / 10 );
 
     std::cout << "The number of digits of " << n << " is " << digits << "." << std::endl;
 }
