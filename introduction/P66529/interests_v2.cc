@@ -10,7 +10,7 @@ int main() {
     
     double i;
     string t;
-    double n;
+    int n;
 
     if (cin >> i >> t) {
         if (t == "setmanal") {
