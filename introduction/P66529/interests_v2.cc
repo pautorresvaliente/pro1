@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cmath>
+#include <string>
+
 using namespace std;
 
 int main() {
@@ -8,18 +10,21 @@ int main() {
     
     double i;
     string t;
-    int n;
+    double n;
 
-    cin >> i >> t;
-
-    if (t == "setmanal") {
+    if (cin >> i >> t) {
+        if (t == "setmanal") {
         n = 52;
-    } else if (t == "mensual") {
-        n = 12;
-    } else if (t == "trimestral") {
-        n = 3;
-    } else if (t == "semestral") {
-        n = 2;
+        } else if (t == "mensual") {
+            n = 12;
+        } else if (t == "trimestral") {
+            n = 3;
+        } else if (t == "semestral") {
+            n = 2;
+        }
+        
+        double tae = 100.0 * (pow(1.0 + (i / 100.0) / n, n) - 1.0);
+        cout << tae << endl; 
     }
-    cout << 100 * (pow(1 + i / (100 * n), n) - 1) << endl; 
+    return 0;
 }

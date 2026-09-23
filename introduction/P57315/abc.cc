@@ -1,23 +1,30 @@
 #include <iostream>
+#include <cmath>
+#include <string>
+
 using namespace std;
 
 int main() {
     int val1, val2, val3, A, B, C;
     string order;
 
-    cin >> val1 >> val2 >> val3;
-    cin >> order;
+    if (cin >> val1 >> val2 >> val3 >> order) {
+        A = min(min(val1, val2), min(val1, val3));
+        C = max(max(val1, val2), max(val1, val3));
+        if (val1 != A && val1 != C) B = val1;
+        else if (val2 != A && val2 != C) B = val2;
+        else B = val3;
 
-    A = min(min(val1, val2), min(val1, val3));
-    C = max(max(val1, val2), max(val1, val3));
-    if (val1 != A && val1 != C) B = val1;
-    else if (val2 != A && val2 != C) B = val2;
-    else B = val3;
-
-    for (int i = 0; i < 3; i++) {
-        if (order[i] == 'A') cout << A << " ";
-        else if (order[i] == 'B') cout << B << " ";
-        else cout << C << " ";
-    }
-    cout << endl;
+        for (int i = 0; i < 3; i++) {
+            if (order[i] == 'A') cout << A;
+            else if (order[i] == 'B') cout << B;
+            else cout << C;
+            
+            if (i < 2) {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    };
+    return 0;
 }
