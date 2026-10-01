@@ -19,6 +19,7 @@ int main() {
     int lines = 0;
     int sums = n - 1;
     int mult = 0;
+    
     while (lines < n) {
         for (int i = 0; i < sums; i++) {
             std::cout << '+';

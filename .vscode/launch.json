@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home2/users/alumnes/1350301/pro1/iterations-1/P74398",
-      "program": "/home2/users/alumnes/1350301/pro1/iterations-1/P74398/build/Debug/outDebug",
+      "cwd": "/home2/users/alumnes/1350301/Documents/pro1/iterations-2/P32533",
+      "program": "/home2/users/alumnes/1350301/Documents/pro1/iterations-2/P32533/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe",
       "setupCommands": [
