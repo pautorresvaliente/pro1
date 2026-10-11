@@ -7,3 +7,7 @@ int number_of_digits(int n) {
     }
     return digits;
 }
+
+int main() {
+    return 0;
+}
