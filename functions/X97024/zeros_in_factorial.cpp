@@ -2,6 +2,11 @@
 
 
 int nzeros_fact(int x) {
+    int count = 0;
 
-    return x / std::pow(5, x/5);
+    while (x >= 5) {
+        count += x / 5;
+        x /= 5;
+    }
+    return count;
 }
